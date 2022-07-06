@@ -36,7 +36,7 @@ public class CreateOrderTest {
         this.colors = colors;
     }
 
-    @Parameterized.Parameters // добавили аннотацию
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1}") // добавили аннотацию
     public static Object[][] getColorData() {
         return new Object[][]{
                 {new String[]{"BLACK", "GREY"}},
